@@ -242,7 +242,7 @@
                     padding: 10px 20px;
                     border-radius: 20px;
                     font-weight: 600;
-                    border:1px solid black;
+                    border: 1px solid black;
                     /* background-color: green; */
                 }
                 .intern{
@@ -280,6 +280,50 @@
                 .internship-card p {
                     color: white;
                 }
+ 
+                .floating-link-btn {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    font-size: 1.5rem;
+                    color: #4F6F52;
+                    transition: transform 0.3s ease, color 0.3s ease;
+                }
+
+                .floating-link-btn:hover {
+                    color: green; 
+                    transform: scale(1.1);
+                }
+              
+                            .certibtn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+            }
+        .certibtn a {
+            display: inline-block;
+            padding: 15px;
+            width: 150px;
+            height: auto;
+            border-radius: 25px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .certibtn a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+            background-color: #4CAF50; /* A lighter green for the hover effect */
+        }
+        .certibtn a:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
                     .internship-card::before {
                         content: '';
                         position: absolute;
