@@ -1,429 +1,459 @@
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
 
-            body {
-                font-family: 'Poppins', sans-serif;
-                font-weight: 400; 
-                line-height: 1.6;
-                overflow-x: hidden;
-                background-color: #f7e9f3;;
-                color: white; 
-            }
+                body {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400; 
+                    line-height: 1.6;
+                    overflow-x: hidden;
+                    background-color: #f7e9f3;;
+                    color: white; 
+                }
 
-            .navbar {
-                display: flex;
-                justify-content: center; 
-                /* background-color: rgb(49, 49, 49); */
-                background-color: white;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-                padding: 20px 0; 
-                position: fixed; 
-                top: 0;
-                left: 0;
-                width: 100%;
-                z-index: 1000;
-                animation: fadeIn 1.5s ease-out;
-            }
-
-            .item {
-                text-decoration: none;
-                color: black;
-                font-weight: 500; 
-                transition: color 0.3s ease, transform 0.3s ease;
-                padding: 10px 20px;
-            }
-            
-            .item:hover {
-                color: #6a1a7c;
-                transform: translateY(-2px);
-            }
-
-            .part1 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 50px 20px;
-                gap: 50px;
-                margin-top: 80px; 
-                flex-wrap: wrap;
-                background: linear-gradient(135deg, #fce4ec, #f06292);
-            }
-
-            .left, .right {
-                margin-top:70px;
-                flex: 1;
-                max-width: 500px;
-                animation: fadeIn 1.5s ease-out;
-            }
-            
-            .left {
-                text-align: left;
-            }
-
-            .left p:nth-child(1) {
-                color: white;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                margin-bottom: 5px;
-            }
-
-            .left h1 {
-                font-size: 3rem;
-                margin-bottom: 10px;
-                color: #6a1a7c;
-            }
-
-            .left h2 {
-                font-size: 1.5rem;
-                color: white;
-                margin-bottom: 10px;
-            }
-
-            .sum {
-                max-width: 400px;
-                padding: 20px 0;
-                font-size: 20px;
-            }
-
-            .social-icons {
-                margin-top: 20px;
-                display: flex;
-                align-items: center;
-                gap: 15px;
-            }
-
-            .social-icons a {
-                color: white;
-                font-size: 1.8rem;
-                transition: color 0.3s;
-            }
-            .social-icons a:hover{
-                color: #6a1a7c;
-            }
-            .loc h6 {
-                padding-top: 20px;
-                font-size: 1rem;
-                color: white;
-            }
-
-            .right img {
-                max-width: 100%;
-                height: auto;
-                display: block;
-                border-radius: 50%;
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-                /* box-shadow: 0px 0px 50px 30px rgb(49,49,49) ; */
-            }
-
-            @keyframes fadeIn {
-                from { opacity: 0; transform: translateY(20px); }
-                to { opacity: 1; transform: translateY(0); }
-            }
-
-            @media (max-width: 768px) {
                 .navbar {
-                    flex-direction: column;
-                    align-items: center;
+                    display: flex;
+                    justify-content: center; 
+                    /* background-color: rgb(49, 49, 49); */
+                    background-color: white;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+                    padding: 20px 0; 
+                    position: fixed; 
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    z-index: 1000;
+                    animation: fadeIn 1.5s ease-out;
+                }
+
+                .item {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 500; 
+                    transition: color 0.3s ease, transform 0.3s ease;
                     padding: 10px 20px;
                 }
-                .item {
-                    padding: 10px 0;
-                    text-align: center;
-                    width: 100%;
-                }
-                .sum{
-            
-                    margin-left: auto;
-                    margin-right:auto ;
-
-                }
-                .part1 {
-                    margin-top: 250px;
-                    flex-direction: column;
-                    text-align: center;
-                }
-                .left, .right {
-                    max-width: 100%;
-                }
-                .left p, .left h1, .left h2 {
-                    text-align: center;
-                }
-                .social-icons {
-                    justify-content: center;
-                }
-            }
-            .skills{
-                margin-top: 100px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-        
-                    .s1 {
-                color: #6a1a7c;
-                font-weight: 900;
-                padding: 10px;
-                position: relative; 
-                display:block; 
-                font-size: 40px;
-            }
-            .s1::after {
-                content: '';
-                display: block; 
-                width: 80px;
-                height: 4px;
-                background-color: #6a1a7c; 
-                border-radius: 2px;
-                margin: 0 auto; 
-            }
-            .s2box{
-
-                margin-top: 40px;
-                /* background-color: rgb(49, 49, 49); */
-                background-color: white;
-                width: 90%; 
-                max-width: 700px;
-                padding: 40px 30px;
-                border-radius: 10px;
-                transition: transform 0.4s ease, box-shadow 0.4s ease;
-                margin-left: auto;
-                margin-right: auto;
                 
-        
-                }
-                .s2box h2{
+                .item:hover {
                     color: #6a1a7c;
-                    padding-bottom: 20px;
+                    transform: translateY(-2px);
                 }
-                    .s2box:hover{
-                        transform: translateY(-7px);
-                        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
-                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-                    }
-                    .pro{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: column;
-                        margin-top: 50px;
-                    }
-                .gallery{
-                    margin-top: 40px;
+
+                .part1 {
                     display: flex;
-                    flex-wrap: wrap;
-                    flex-direction: row;
-                    gap:50px;
                     justify-content: center;
                     align-items: center;
-                    margin-bottom: 20px;
-                    
+                    padding: 50px 20px;
+                    gap: 50px;
+                    margin-top: 80px; 
+                    flex-wrap: wrap;
+                    /* background: linear-gradient(135deg, #fce4ec, #f06292); */
+                    /* background: linear-gradient(135deg, #4caf50, #6a1a7c); */
+                    /* background: linear-gradient(to top,white,#f7e9f3,#9458a1); */
+                    /* background: linear-gradient(to top,white,#f7e9f3,#a170ac); */
+                    /* background: linear-gradient(to top,white,#f7e9f3,#b88dc2); */
+                    /* background: linear-gradient(135deg, #f5f5f7, #f7e9f3); */
+                    background-color: #f7e9f3;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+                    /* background:linear-gradient(-145deg, #ffffff, #b891cfb3); */
+                }
+
+                .left, .right {
+                    margin-top:70px;
+                    flex: 1;
+                    max-width: 500px;
+                    animation: fadeIn 1.5s ease-out;
+                }
+                
+                .left {
+                    text-align: left;
+                }
+
+                .left p:nth-child(1) {
+                    /* color: white; */
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin-bottom: 5px;
+                    font-weight: 800;
+                }
+
+                .left h1 {
+                    font-size: 3rem;
+                    margin-bottom: 10px;
+                    color: #6a1a7c;
+                }
+
+                .left h2 {
+                    font-size: 1.5rem;
+                    color: white;
+                    margin-bottom: 10px;
+                    color: black;
+                }
+
+                .sum {
+                    max-width: 400px;
+                    padding: 20px 0;
+                    font-size: 20px;
+                    color: black;
+                }
+
+                .social-icons {
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                }
+
+                .social-icons a {
+                    color: white;
+                    font-size: 1.8rem;
+                    transition: color 0.3s;
+                    color: #6a1a7c;
+                }
+                .social-icons a:hover{
+                    color:#8a4799;
+                }
+                .loc h6 {
+                    padding-top: 20px;
+                    font-size: 1rem;
+                    color: black;
+                }
+
+                .right img {
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                    border-radius: 50%;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+                    /* box-shadow: 0px 0px 50px 30px rgb(49,49,49) ; */
+                }
+
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(20px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+                
+
+                @media (max-width: 768px) {
+                    .navbar {
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 10px 20px;
                     }
-                    .card1,.card2{
+                    .item {
+                        padding: 3px ;
+                        text-align: center;
+                        width: 100%;
+                    }
+                    .item:hover {
+                    color: #6a1a7c;
+                    transform: translateY(-2px);
+                }
+                    .sum{
+                
+                        margin-left: auto;
+                        margin-right:auto ;
+
+                    }
+                    .part1 {
+                        margin-top:130px;
+                        flex-direction: column;
+                        text-align: center;
+                    }
+                    .left, .right {
+                        max-width: 100%;
+                    }
+                    .left p, .left h1, .left h2 {
+                        text-align: center;
+                    }
+                    .social-icons {
+                        justify-content: center;
+                    }
+                }
+                @media (min-width: 768px) and (max-width: 768px) {
+                    .right{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+                .right img{
+                    max-width: 70%;
+                    height: auto;
+                }
+                }
+                .skills{
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                        .s1 {
+                    color: #6a1a7c;
+                    font-weight: 900;
+                    padding: 10px;
+                    position: relative; 
+                    display:block; 
+                    font-size: 40px;
+                }
+                .s1::after {
+                    content: '';
+                    display: block; 
+                    width: 80px;
+                    height: 4px;
+                    background-color: #6a1a7c; 
+                    border-radius: 2px;
+                    margin: 0 auto; 
+                }
+                .s2box{
+
+                    margin-top: 40px;
+                    /* background-color: rgb(49, 49, 49); */
+                    background-color: white;
+                    width: 90%; 
+                    max-width: 700px;
+                    padding: 40px 30px;
+                    border-radius: 10px;
+                    transition: transform 0.4s ease, box-shadow 0.4s ease;
+                    margin-left: auto;
+                    margin-right: auto;
+                    
+            
+                    }
+                    .s2box h2{
+                        color: #6a1a7c;
+                        padding-bottom: 20px;
+                    }
+                        .s2box:hover{
+                            transform: translateY(-7px);
+                            /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+                            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+                        }
+                        .pro{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            margin-top: 50px;
+                        }
+                    .gallery{
+                        margin-top: 40px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        gap:50px;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 100px;
+                        }
+                        .card1,.card2{
+                            /* background-color: rgb(49, 49, 49); */
+                            background-color: white;
+                            width: 90%;
+                            max-width: 500px;
+                            height: auto;
+                            border-radius: 10px;
+                            padding: 30px;
+                            line-height: 1.8rem;
+                            transition: transform 0.4s ease, box-shadow 0.4s ease;
+                            color: black;
+                            position: relative;
+                            overflow: hidden;
+                        }
+                    .card1:hover,.card2:hover{
+                        transform: translateY(-10px);
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);;
+                    }
+                    .card1 h2,.card2 h2
+                    {
+                        color:#6a1a7c;
+                    }
+                    .card1 p,.card2 p
+                    {
+                        color: black;
+                        margin-top: 8px;
+                    }
+                    .card1 button ,.card2 button{
+                        margin-top: 10px;
+                        padding: 10px 20px;
+                        border-radius: 20px;
+                        font-weight: 600;
+                        border: 2px solid #6a1a7c;
+                        /* background-color: green; */
+                    }
+                    .floating-link-btn {
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                        font-size: 1.5rem;
+                        color: #8a4799;
+                        transition: transform 0.3s ease, color 0.3s ease;
+                    }
+
+                    .floating-link-btn:hover {
+                        color: #6a1a7c; 
+                        transform: scale(1.1);
+                    }
+                    .intern{
+                        margin-top: 60px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .internship-card {
                         /* background-color: rgb(49, 49, 49); */
                         background-color: white;
                         width: 90%;
-                        max-width: 500px;
+                        max-width: 800px;
                         height: auto;
-                        border-radius: 10px;
                         padding: 30px;
                         line-height: 1.8rem;
+                        margin-top: 40px;
+                        position: relative;
+                        overflow: hidden;
                         transition: transform 0.4s ease, box-shadow 0.4s ease;
+                        border-radius: 15px;
+                    }
+
+                    .internship-card:hover {
+                        transform: translateY(-7px);
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+                    }
+
+                    .internship-card h3{
+                        color: #6a1a7c;
+                        padding-bottom: 10px;
+                        font-size: 1.8rem;
+                    }
+
+                    .internship-card p {
                         color: black;
                     }
-                .card1:hover,.card2:hover{
-                    transform: translateY(-10px);
-                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);;
-                }
-                .card1 h2,.card2 h2
-                {
-                    color:#6a1a7c;
-                }
-                .card1 p,.card2 p
-                {
-                    color: black;
-                    margin-top: 8px;
-                }
-                .card1 button ,.card2 button{
-                    margin-top: 10px;
-                    padding: 10px 20px;
-                    border-radius: 20px;
-                    font-weight: 600;
-                    border: 1px solid #6a1a7c;
-                    /* background-color: green; */
-                }
-                .floating-link-btn {
-                    position: absolute;
-                    top: 20px;
-                    right: 20px;
-                    font-size: 1.5rem;
-                    color: #8a4799;
-                    transition: transform 0.3s ease, color 0.3s ease;
-                }
-
-                .floating-link-btn:hover {
-                    color: #6a1a7c; 
-                    transform: scale(1.1);
-                }
-                .intern{
-                    margin-top: 60px;
+                                .certibtn {
                     display: flex;
-                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    margin-top: 20px;
                 }
-                .internship-card {
-                    /* background-color: rgb(49, 49, 49); */
-                    background-color: white;
-                    width: 90%;
-                    max-width: 800px;
-                    height: auto;
-                    padding: 30px;
-                    line-height: 1.8rem;
-                    margin-top: 40px;
-                    position: relative;
-                    overflow: hidden;
-                    transition: transform 0.4s ease, box-shadow 0.4s ease;
-                    border-radius: 15px;
-                }
-
-                .internship-card:hover {
-                    transform: translateY(-7px);
-                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-                }
-
-                .internship-card h3{
-                    color: #6a1a7c;
-                    padding-bottom: 10px;
-                    font-size: 1.8rem;
-                }
-
-                .internship-card p {
-                    color: black;
-                }
- 
-                
-              
-                            .certibtn {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 20px;
+            .certibtn a {
+                display: inline-block;
+                padding: 15px;
+                width: 150px;
+                height: auto;
+                border-radius: 25px;
+                background-color: #6a1a7c;
+                color: white;
+                text-align: center;
+                font-weight: bold;
+                text-decoration: none;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
             }
-        .certibtn a {
-            display: inline-block;
-            padding: 15px;
-            width: 150px;
-            height: auto;
-            border-radius: 25px;
-            background-color: #6a1a7c;
-            color: white;
-            text-align: center;
-            font-weight: bold;
-            text-decoration: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .certibtn a:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-            background-color: #8a4799; /* A lighter green for the hover effect */
-        }
-        .certibtn a:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-                    .internship-card::before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        width: 50px;
-                        height: 50px;
-                        background-color: #6a1a7c;
-                        border-bottom-left-radius: 15px;
-                    }
-                    .internship-card::after {
-                        content: '';
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        width: 50px;
-                        height: 50px;
-                        background-color: #6a1a7c;
-                        border-top-right-radius: 15px;
-                    }
-                    .achievements {
-                        margin-top: 150px;
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 40px;
-                        padding: 20px;
-                    }
-                    .achievement-card {
-                        /* background-color: rgb(49, 49, 49); */
-                        background-color: white;
-                        width: 250px;
-                        height: 250px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                        padding: 20px;
-                        position: relative; 
-                        border-left: 5px solid #6a1a7c;
-                        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-                    }
-                    .achievement-card p {
-                        color: black;
-                        font-size: 1.1rem;
-                        line-height: 1.6;
-                        position: relative;
-                        z-index: 2;
-                    }
-                    .achievement-card p strong {
-                        color: #6a1a7c;
-                        font-weight: 600;
-                    }
-                    .certifications{
-                        margin-top: 30px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;  
-                          
-                    }
-                    .cert-card{
-                        margin-top: 10px;
-                        /* background-color: rgb(49, 49, 49); */
-                        background-color: white;
-                        width: 50%; 
-                        max-width: 700px;
-                        padding: 30px 30px;
-                        color: black;
-                        border-left: 5px solid #6a1a7c;
-                    }
-                    .edu{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        margin-top: 60px;
-                        margin-bottom: 100px;
-                        color: black;
-                    }
-                    footer{
-                        /* background-color: rgb(49, 49, 49); */
-                        background-color: white;
-                        color: black;
-                        font-weight: 600;
-                        text-align: center;
-                        padding: 40px;
+            .certibtn a:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+                background-color: #8a4799; /* A lighter green for the hover effect */
+            }
+            .certibtn a:active {
+                transform: translateY(0);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            }
+                        .internship-card::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 50px;
+                            height: 50px;
+                            background-color: #6a1a7c;
+                            border-bottom-left-radius: 15px;
+                        }
+                        .internship-card::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 50px;
+                            height: 50px;
+                            background-color: #6a1a7c;
+                            border-top-right-radius: 15px;
+                        }
+                        .achievements {
+                            margin-top: 150px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 40px;
+                            padding: 20px;
+                        }
+                        .achievement-card {
+                            /* background-color: rgb(49, 49, 49); */
+                            background-color: white;
+                            width: 250px;
+                            height: 250px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            padding: 20px;
+                            position: relative; 
+                            border-left: 5px solid #6a1a7c;
+                            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                        }
+                        .achievement-card p {
+                            color: black;
+                            font-size: 1.1rem;
+                            line-height: 1.6;
+                            position: relative;
+                            z-index: 2;
+                        }
+                        .achievement-card p strong {
+                            color: #6a1a7c;
+                            font-weight: 600;
+                        }
+                        .achievement-card:hover{
+                            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+                        }
+                        .certifications{
+                            margin-top: 30px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;  
+                            
+                        }
+                        .cert-card{
+                            margin-top: 10px;
+                            /* background-color: rgb(49, 49, 49); */
+                            background-color: white;
+                            width: 50%; 
+                            max-width: 700px;
+                            padding: 30px 30px;
+                            color: black;
+                            border-left: 5px solid #6a1a7c;
+                        }
+                        .edu{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 60px;
+                            margin-bottom: 100px;
+                            color: black;
+                        }
+                        footer{
+                            /* background-color: rgb(49, 49, 49); */
+                            background-color: white;
+                            color: black;
+                            font-weight: 600;
+                            text-align: center;
+                            padding: 40px;
 
-                    }
-                    
+                        }
+                        
