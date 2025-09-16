@@ -22,7 +22,7 @@
             </div>
         </header>
         <div id="ABOUT">
-        <div class="part1">
+            <div class="part1">
             <div class="left">
                 <p style="color: grey;">THIS IS</p>
                 <h1>Dharani Sri Maha Rolla</h1>
@@ -39,13 +39,13 @@
                 </div>
             </div>
             <div class="right">
-                <img src="Circleimg.jpeg" alt="Image" style="border-radius: 50%; width: 450px; height: 450px;">
+                <img src="Circleimg.jpeg" alt="Image" style="border-radius: 50%;">
             </div>
         </div>
         </div>
     <div id="SKILLS&">
         <div class="skills">
-            <h1 class="s1">Skills & Interests</h1>
+            <h1 class="s1">Skills</h1>
             <div class="s2box ">
                 <h2><i class="fas fa-code"></i>&nbsp; Programming Languages</h2>
                 <p style="color:black;">C++, C, Java, Python</p>
@@ -192,6 +192,13 @@
                 if (section) { 
                     section.scrollIntoView({ behavior: "smooth" });
                 }
+            }
+                        function openSidebar() {
+                document.getElementById('mobileSidebar').classList.add('active');
+            }
+
+            function closeSidebar() {
+                document.getElementById('mobileSidebar').classList.remove('active');
             }
             // function scrolltosection() {
             //     const section = document.getElementById("ABOUT");
