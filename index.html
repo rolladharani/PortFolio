@@ -1,27 +1,39 @@
-
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dharani's Portfolio</title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="./portfolio.css">
-    </head>
-    <body>
-        <header>
-            <div class="navbar">
-                <a href="#" class="item" onclick="scrolltosection(event, 'ABOUT')">About</a>
-                <a href="#" class="item" onclick="scrolltosection(event, 'SKILLS&')">Skills</a>
-                <a href="#" class="item" onclick="scrolltosection(event, 'PROJECTS')">Projects</a>
-                <a href="#" class="item" onclick="scrolltosection(event, 'INTERNSHIP')">Internship</a>
-                <a href="#" class="item" onclick="scrolltosection(event, 'ACHIEVE')">Achievements</a>
-                <a href="#" class="item" onclick="scrolltosection(event, 'CERTIFICATE')">Certifications</a>
-                <a href="#" class="item" onclick="scrolltosection(event, 'EDUCATION')">Education</a>
+        <html>
+            <head>
+                <title>Dharani's portfolio</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="./portfolio.css">
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            </head>
+            <body>
+                    <header>
+                    <div class="navbar">
+                        <a href="#" class="item" onclick="scrolltosection(event, 'ABOUT')">About</a>
+                        <a href="#" class="item" onclick="scrolltosection(event, 'SKILLS&')">Skills</a>
+                        <a href="#" class="item" onclick="scrolltosection(event, 'PROJECTS')">Projects</a>
+                        <a href="#" class="item" onclick="scrolltosection(event, 'INTERNSHIP')">Internship</a>
+                        <a href="#" class="item" onclick="scrolltosection(event, 'ACHIEVE')">Achievements</a>
+                        <a href="#" class="item" onclick="scrolltosection(event, 'CERTIFICATE')">Certifications</a>
+                        <a href="#" class="item" onclick="scrolltosection(event, 'EDUCATION')">Education</a>
+                        <div class="item2">
+                            <h2>Dharani Rolla</h2>
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </header>
+                            <div class="mobile-options" id="sidebar">
+                <span onclick="closebar()">&#x2716;</span>
+                <div><a href="#ABOUT"   style="text-decoration: none;">About</a></div>
+                <div><a href="#SKILLS&" style="text-decoration: none;">Skills</a></div>
+                <div><a href="#PROJECTS" style="text-decoration: none;">Projects</a></div>
+                <div><a href="#INTERNSHIP" style="text-decoration: none;">Internship</a></div>
+                <div><a href="#ACHIEVE" style="text-decoration: none;">Achievements</a></div>
+                <div><a href="#CERTIFICATE" style="text-decoration: none;">Certifications</a></div>
+                <div><a href="#EDUCATION" style="text-decoration: none;">Education</a></div>
             </div>
-        </header>
-        <div id="ABOUT">
+            <div class="divv" style=" background-color: #f7e9f3;">
+             <div id="ABOUT">
             <div class="part1">
             <div class="left">
                 <p style="color: grey;">THIS IS</p>
@@ -116,7 +128,7 @@
                 </div>
                 </div>
                 </div>
-                <div id="ACHIEVE">
+                               <div id="ACHIEVE">
         <div class="achievements">
             <h1 class="s1">Achievements</h1>
 
@@ -182,11 +194,12 @@
                         <p><strong>Sri Chaitanya Junior College</strong> &nbsp; | &nbsp; 2021 - 2023</p>
                         <p><strong>Percentage:</strong> 92.3</p>
                     </div></div></div>
+</div>
                     <footer>
                         <p>Built by Dharani Sri Maha Rolla❤️</p>
                     </footer>
                 <script>
-            function scrolltosection(event, id) {
+                        function scrolltosection(event, id) {
                 event.preventDefault();
                 const section = document.getElementById(id);
                 if (section) { 
@@ -196,27 +209,19 @@
                         function openSidebar() {
                 document.getElementById('mobileSidebar').classList.add('active');
             }
+            
 
             function closeSidebar() {
                 document.getElementById('mobileSidebar').classList.remove('active');
             }
-            // function scrolltosection() {
-            //     const section = document.getElementById("ABOUT");
-            //     section.scrollIntoView({ behavior: "smooth" });
-            // }
-            // function scrolltosection2() {
-            //     const section = document.getElementById("SKILLS&");
-            //     section.scrollIntoView({ behavior: "smooth" });
-            // }
-            // function scrolltosection3() {
-            //     const section = document.getElementById("PROJECTS");
-            //     section.scrollIntoView({ behavior: "smooth" });
-            // }
-            // function scrolltosection4() {
-            //     const section = document.getElementById("INTERNSHIP");
-            //     section.scrollIntoView({ behavior: "smooth" });
-            // }
-        
-    </script>
-    </body>
-    </html>
+    document.querySelector(".item2 i").addEventListener("click", function () {
+        document.getElementById("sidebar").style.left = "0px";
+    });
+
+    function closebar() {
+        document.getElementById("sidebar").style.left = "-270px";
+    }
+</script>
+
+            </body>
+        </html>
